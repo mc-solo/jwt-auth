@@ -46,3 +46,5 @@ async function pullData() {
   console.log(data);
 }
 pullData();
+
+// This could be better just add error handling part, but iss good for now
