@@ -1,7 +1,6 @@
-const http = require("http");
+// const http = require("http");
 
-const PORT = process.env.PORT || 7000;
+// const PORT = process.env.PORT || 3000;
+// const server = http.createServer();
 
-const server = http.createServer();
-
-server.listen(PORT);
+// server.listen(PORT);
