@@ -1,6 +1,16 @@
-// const http = require("http");
+const express = require("express");
 
-// const PORT = process.env.PORT || 3000;
-// const server = http.createServer();
+const app = express();
 
-// server.listen(PORT);
+// define a port from the env variable
+const PORT = process.env.PORT || 3000;
+
+// define a basic route
+const server = app.get("/", (req, res) => {
+  res.send("Response sent!");
+});
+
+// starting the server
+server.listen(PORT, () => {
+  console.log("Server is running on port:", PORT);
+});
